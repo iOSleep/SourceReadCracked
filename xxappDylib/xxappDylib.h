@@ -4,7 +4,7 @@
 //  xxappDylib.h
 //  xxappDylib
 //
-//  Created by 马旭 on 2022/7/29.
+//  Created by iOSleep on 2022/7/29.
 //  Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
@@ -12,14 +12,14 @@
 
 #define INSERT_SUCCESS_WELCOME "               🎉!!！congratulations!!！🎉\n👍----------------insert dylib success----------------👍\n"
 
-@interface CustomViewController
-
-@property (nonatomic, copy) NSString* newProperty;
-
-+ (void)classMethod;
-
-- (NSString*)getMyName;
-
-- (void)newMethod:(NSString*) output;
-
-@end
+//@interface BookShelfViewController
+//
+//@property (nonatomic, copy) NSString* newProperty;
+//
+//+ (void)classMethod;
+//
+//- (NSString*)getMyName;
+//
+//- (void)newMethod:(NSString*) output;
+//
+//@end

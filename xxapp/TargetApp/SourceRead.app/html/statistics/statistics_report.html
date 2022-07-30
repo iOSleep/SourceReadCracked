@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>报告</title>
+    <script src="./vue.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="backgroud.css" />
+    <style>
+      body {
+        display: flex;
+      }
+      .title {
+        position: absolute;
+        top: 10px;
+        text-align: center;
+        width: 100%;
+        font-size: 15pt;
+        color: white;
+      }
+      .sum {
+        color: white;
+        font-size: 1.5em;
+      }
+      .sumNum {
+        font-size: 1.5em;
+        font-family: "Exo";
+      }
+      .qualitySection {
+        color: white;
+        border-radius: 30px;
+        margin-top: 80px;
+      }
+      .usageSection {
+        color: white;
+        border-radius: 30px;
+        margin-top: 80px;
+      }
+      .sectionInfo {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .boutiqueSource {
+        color: #9acd32;
+        font-size: 2em;
+        font-family: "Exo";
+      }
+      .badSource {
+        color: #ffa500;
+        font-size: 2em;
+        font-family: "Exo";
+      }
+      .use {
+        color: #9acd32;
+        font-size: 2em;
+        font-family: "Exo";
+      }
+      .unuse {
+        color: #ffa500;
+        font-size: 2em;
+        font-family: "Exo";
+      }
+      .rate {
+        font-size: 1.3em;
+        color: purple;
+        font-family: "Exo";
+      }
+      .glory {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 90px;
+        align-items: center;
+        width: 100%;
+        margin-left: -20px;
+      }
+      .gloryTitle {
+        font-size: 1.2em;
+        color: #f4a460;
+      }
+      .gloryName {
+        font-size: 1.2em;
+        color: white;
+        background-color: #f4a460;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-top: 20px;
+      }
+      .gloryTip {
+        font-size: 12pt;
+        color: white;
+        margin-bottom: 20px;
+      }
+      .tip {
+        position: absolute;
+        margin-left: -20px;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 10pt;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="title">统计报告</h3>
+    <div id="app" class="context">
+      <p class="sum">总共拥有 <b id="sumNum">{{sumNum}}</b> 个源</p>
+      <div class="qualitySection">
+        <p>其中</p>
+        <div class="sectionInfo">
+          <span> 精品源 <b class="boutiqueSource">{{goodNum}}</b> 个 </span>
+          &nbsp;&nbsp;&nbsp;
+          <span> 垃圾源 <b class="badSource">{{badNum}}</b> 个 </span>
+        </div>
+        <p>精品占比 <span class="rate">{{goodRate}}%</span></p>
+      </div>
+      <div class="usageSection">
+        <p>日常使用</p>
+        <div class="sectionInfo">
+          <span> 使用过 <b class="use">{{usedNum}}</b> 个 </span>
+          &nbsp;&nbsp;&nbsp;
+          <span> 未使用 <b class="unuse">{{unusedNum}}</b> 个 </span>
+        </div>
+        <p>使用率 <span class="rate">{{usedRate}}%</span></p>
+      </div>
+      <div class="glory">
+        <div class="gloryTip">{{conclusion}}</div>
+        <div class="gloryTitle">荣耀称号</div>
+        <div class="gloryName">{{gloryName}}</div>
+      </div>
+      <div class="tip">
+        开启智能评估后，此报告随着日常使用而变化
+      </div>
+    </div>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      var app = new Vue({
+        el: "#app",
+        data: {
+          sumNum: 0,
+          goodNum: 0,
+          badNum: 0,
+          usedNum: 0,
+          unusedNum: 0,
+          goodRate: 0,
+          usedRate: 0,
+          gloryName: "初生",
+          conclusion: "初生鸿蒙，初识天地"
+        },
+        methods: {
+				refresh: function(sum, good, bad, used, times) {
+          this.sumNum = sum 
+          this.goodNum = good
+          this.badNum = bad
+          this.usedNum = used
+          this.unusedNum = sum - used
+          this.goodRate = (good / sum * 100).toFixed(0)
+          this.usedRate = (used / sum * 100).toFixed(0)
+          if(times < 300) {
+            this.gloryName = "初生"
+            this.gloryName = "初生鸿蒙，初识天地"
+          } else if(this.goodRate >= 80 && this.usedRate >= 80) {
+            this.gloryName = "仙人"
+            this.conclusion = "取其精华，物尽其用"
+          } else if(this.goodRate >= 60 && this.usedRate >= 60) {
+            this.gloryName = "修仙者"
+            this.conclusion = "金丹凝聚，御物有方"
+          } else if(this.goodRate >= 40 && this.usedRate >= 40) {
+            this.gloryName = "练气师"
+            this.conclusion = "良莠不齐，闲置甚多"
+          } else if(this.goodRate >= 20 && this.usedRate >= 20) {
+            this.gloryName = "凡人"
+            this.conclusion = "筋骨未炼，任督未开"
+          } else if(this.goodRate >= 20 && this.usedRate < 20) {
+            this.gloryName = "拾荒者"
+            this.conclusion = "我不在意体验，只想捡垃圾"
+          } else {
+            this.gloryName = "愚人"
+            this.conclusion = "到处都充斥着劣质品的气味"
+          }
+				}
+			}
+      });
+    </script>
+  </body>
+</html>

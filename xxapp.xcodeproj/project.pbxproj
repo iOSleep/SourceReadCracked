@@ -37,6 +37,7 @@
 		5A0603882893EC6D0084BC59 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0603872893EC6D0084BC59 /* fishhook.h */; };
 		5A06038A2893EC6D0084BC59 /* xxappDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0603892893EC6D0084BC59 /* xxappDylib.h */; };
 		5A06038C2893EC6D0084BC59 /* xxappDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A06038B2893EC6D0084BC59 /* xxappDylib.m */; };
+		66AE9797E2B79FD625316C24 /* Pods_xxappDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9A424717E0D32D971EC8AE /* Pods_xxappDylib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +74,7 @@
 		5A06034A2893EC6D0084BC59 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		5A06034C2893EC6D0084BC59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A06034E2893EC6D0084BC59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		5A0603522893EC6D0084BC59 /* xxappDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = xxappDylib.xm; sourceTree = "<group>"; };
+		5A0603522893EC6D0084BC59 /* xxappDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = xxappDylib.xm; sourceTree = "<group>"; };
 		5A0603532893EC6D0084BC59 /* xxappDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = xxappDylib.mm; sourceTree = "<group>"; };
 		5A0603562893EC6D0084BC59 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
 		5A0603582893EC6D0084BC59 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
@@ -101,6 +102,9 @@
 		5A0603872893EC6D0084BC59 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		5A0603892893EC6D0084BC59 /* xxappDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xxappDylib.h; sourceTree = "<group>"; };
 		5A06038B2893EC6D0084BC59 /* xxappDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xxappDylib.m; sourceTree = "<group>"; };
+		D02B225956C020234DCC3935 /* Pods-xxappDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xxappDylib.debug.xcconfig"; path = "Target Support Files/Pods-xxappDylib/Pods-xxappDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		D19158B465912462C2ECDE93 /* Pods-xxappDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xxappDylib.release.xcconfig"; path = "Target Support Files/Pods-xxappDylib/Pods-xxappDylib.release.xcconfig"; sourceTree = "<group>"; };
+		FB9A424717E0D32D971EC8AE /* Pods_xxappDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xxappDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				5A06034B2893EC6D0084BC59 /* JavaScriptCore.framework in Frameworks */,
 				5A06034F2893EC6D0084BC59 /* UIKit.framework in Frameworks */,
 				5A06034D2893EC6D0084BC59 /* Foundation.framework in Frameworks */,
+				66AE9797E2B79FD625316C24 /* Pods_xxappDylib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +136,7 @@
 				5A0603502893EC6D0084BC59 /* xxappDylib */,
 				5A0603492893EC6D0084BC59 /* Frameworks */,
 				5A0603352893EC6D0084BC59 /* Products */,
+				F61E3726BE165BABD7A1AE81 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +191,7 @@
 				5A06034A2893EC6D0084BC59 /* JavaScriptCore.framework */,
 				5A06034C2893EC6D0084BC59 /* Foundation.framework */,
 				5A06034E2893EC6D0084BC59 /* UIKit.framework */,
+				FB9A424717E0D32D971EC8AE /* Pods_xxappDylib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,6 +287,15 @@
 			path = fishhook;
 			sourceTree = "<group>";
 		};
+		F61E3726BE165BABD7A1AE81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D02B225956C020234DCC3935 /* Pods-xxappDylib.debug.xcconfig */,
+				D19158B465912462C2ECDE93 /* Pods-xxappDylib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -326,6 +342,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A06038F2893EC6D0084BC59 /* Build configuration list for PBXNativeTarget "xxappDylib" */;
 			buildPhases = (
+				3ED3828D017447F55B5034CB /* [CP] Check Pods Manifest.lock */,
 				5A0603402893EC6D0084BC59 /* ShellScript */,
 				5A0603412893EC6D0084BC59 /* Sources */,
 				5A0603422893EC6D0084BC59 /* Frameworks */,
@@ -388,6 +405,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3ED3828D017447F55B5034CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xxappDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5A06032F2893EC6C0084BC59 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,7 +459,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign\n";
 		};
 		5A0603402893EC6D0084BC59 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -437,7 +476,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -596,6 +635,7 @@
 		};
 		5A0603902893EC6D0084BC59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02B225956C020234DCC3935 /* Pods-xxappDylib.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3J552VK5W5;
@@ -622,6 +662,7 @@
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libxxappDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -657,6 +698,7 @@
 		};
 		5A0603912893EC6D0084BC59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19158B465912462C2ECDE93 /* Pods-xxappDylib.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
@@ -683,6 +725,7 @@
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libxxappDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -720,6 +763,7 @@
 				DEVELOPMENT_TEAM = 3J552VK5W5;
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MARKETING_VERSION = 1.0;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
@@ -729,7 +773,7 @@
 				MONKEYDEV_TARGET_APP = Optional;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = io.iOSleep.xxapp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.iosleep.nihaoya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -744,6 +788,7 @@
 				DEVELOPMENT_TEAM = 3J552VK5W5;
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MARKETING_VERSION = 1.0;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
@@ -753,7 +798,7 @@
 				MONKEYDEV_TARGET_APP = Optional;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = io.iOSleep.xxapp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.iosleep.nihaoya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

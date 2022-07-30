@@ -1,0 +1,129 @@
+{
+  "layers" : [
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "conv2d_1",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "conv2d_1__activation___output",
+      "blob_weights" : 3,
+      "K" : 3,
+      "blob_biases" : 1,
+      "name" : "conv2d_1",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "image",
+      "weights" : {
+
+      },
+      "Nx" : 9,
+      "pad_mode" : 1,
+      "pad_value" : 0,
+      "Ny" : 9,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "conv2d_2",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "conv2d_2__activation___output",
+      "blob_weights" : 7,
+      "K" : 128,
+      "blob_biases" : 5,
+      "name" : "conv2d_2",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "conv2d_1__activation___output",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 1,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 0,
+      "fused_tanh" : 0,
+      "debug_info" : "conv2d_3",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "output1",
+      "blob_weights" : 11,
+      "K" : 64,
+      "blob_biases" : 9,
+      "name" : "conv2d_3",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 3,
+      "bottom" : "conv2d_2__activation___output",
+      "weights" : {
+
+      },
+      "Nx" : 5,
+      "pad_mode" : 1,
+      "pad_value" : 0,
+      "Ny" : 5,
+      "n_parallel" : 1
+    },
+    {
+      "bottom" : "output1",
+      "alpha" : 255,
+      "beta" : 0,
+      "mode" : 6,
+      "weights" : {
+
+      },
+      "debug_info" : "my_intermediate_output_layer",
+      "top" : "image_output",
+      "type" : "activation",
+      "name" : "my_intermediate_output_layer",
+      "attributes" : {
+        "is_output" : 1
+      }
+    }
+  ],
+  "transform_params" : {
+    "image" : {
+      "bias_a" : 0,
+      "bias_g" : 0,
+      "bias_r" : 0,
+      "bias_b" : 0,
+      "center_mean" : 0,
+      "is_network_bgr" : 0,
+      "scale" : 0.0039215688593685627
+    }
+  },
+  "storage" : "model.espresso.weights",
+  "metadata_in_weights" : [
+
+  ],
+  "properties" : {
+
+  },
+  "analyses" : {
+
+  },
+  "format_version" : 200
+}

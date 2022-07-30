@@ -1,0 +1,29 @@
+[
+  {
+    "customOrder": 1,
+    "enableJs": true,
+    "enabled": true,
+    "singleUrl": true,
+    "sourceIcon": "http:\/\/ku.mumuceo.com\/static\/images\/applogo\/yuedu.png",
+    "sourceName": "使用说明",
+    "sourceUrl": "https://www.yuque.com/legado"
+  },
+  {
+    "customOrder": 2,
+    "enableJs": true,
+    "enabled": true,
+    "singleUrl": true,
+    "sourceIcon": "https://txc.gtimg.com/data/145120/2020/0418/99f04e2fdbed180f8ad0cb6ee5cfddca.png",
+    "sourceName": "源仓库",
+    "sourceUrl": "http://yck.mumuceo.com/"
+  },
+  {
+    "customOrder": 3,
+    "enableJs": true,
+    "enabled": true,
+    "singleUrl": true,
+    "sourceIcon": "http://image.5you.com/attachment/soft/2020/0720/171051_34898081.png",
+    "sourceName": "海阔视界",
+    "sourceUrl": "https://haikuoshijie.cn/topics/node/1?p=2"
+  },
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "height" : "200",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "200",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 200 × 200)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "Flatten layer output, penultimate layer",
+        "name" : "image_output"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 1,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "ActivationReLU" : 2,
+      "Convolution" : 3,
+      "ActivationLinear" : 1
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+
+    },
+    "generatedClassName" : "SRCNN",
+    "inputSchema" : [
+      {
+        "height" : "200",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "200",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 200 × 200)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image"
+      }
+    ],
+    "method" : "predict"
+  }
+]

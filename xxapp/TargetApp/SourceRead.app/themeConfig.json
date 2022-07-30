@@ -1,0 +1,46 @@
+[
+    {
+        "id": "0",
+        "themeName": "系统",
+        "isNightTheme": false,
+        "accentColor": "#4A90E2",
+        "secondaryTextColor": "#666666",
+        "tertiaryTextColor": "#999999"
+    },
+    {
+        "id": "1",
+        "themeName": "典雅蓝",
+        "isNightTheme": false,
+        "primaryColor": "#03A9F4",
+        "accentColor": "#AD1457",
+        "backgroundColor": "#F5F5F5",
+        "bottomBackground": "#EEEEEE",
+        "primaryTextColor": "#000000",
+        "secondaryTextColor": "#666666",
+        "tertiaryTextColor": "#999999"
+    },
+    {
+        "id": "2",
+        "themeName": "黑白",
+        "isNightTheme": true,
+        "primaryColor": "#303030",
+        "accentColor": "#E0E0E0",
+        "backgroundColor": "#424242",
+        "bottomBackground": "#424242",
+        "primaryTextColor": "#FFFFFF",
+        "secondaryTextColor": "#999999",
+        "tertiaryTextColor": "#666666"
+    },
+    {
+        "id": "3",
+        "themeName": "A屏黑",
+        "isNightTheme": true,
+        "primaryColor": "#000000",
+        "accentColor": "#FFFFFF",
+        "backgroundColor": "#000000",
+        "bottomBackground": "#000000",
+        "primaryTextColor": "#FFFFFF",
+        "secondaryTextColor": "#999999",
+        "tertiaryTextColor": "#666666"
+    }
+]
